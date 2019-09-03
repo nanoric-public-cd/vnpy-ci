@@ -7,6 +7,7 @@ FROM circleci/python:3.7 as python
 COPY --from=gcc /usr/local /usr/local
 COPY --from=gcc /usr/share /usr/share
 
+USER root
 RUN apt update
 RUN apt install -y libgl1-mesa-glx
 
