@@ -1,5 +1,5 @@
 FROM gcc:7 as gcc
-FROM python:3.7 as python
+FROM circleci/python:3.7 as python
 
 #COPY --from=python /usr/local /usr/local
 #COPY --from=python /usr/lib /usr/lib
